@@ -56,14 +56,19 @@
     ```
     python -m script_assistant.run
     ```
-* **runner_config.json** (setting like pytest)
+* **runner_config.json** path: **automation_test/runner/config/** (setting like pytest)
     * step_sleep_time
     * include_test_target: you can change your test target. e.q.
     ```
     "automation_test/test_case/cc/azure_dev/soap_spell_check/e2e_show_spell_check.side"
     ```
-* **his_agent.json**
+* **his_agent.json** path: **automation_test/his_agent/config/**
     * headless: if it setting to false, the chromedriver will display the whole test prograss. 
     * chrome_driver_executable_path
         * common windows: **/chromedriver.exe**
         * wsl2: **/usr/bin/chromedriver**
+
+* run test:
+    ```
+    python script_runner.py 
+    ```
