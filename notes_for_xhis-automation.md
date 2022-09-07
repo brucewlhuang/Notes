@@ -2,12 +2,12 @@
 * https://github.com/ASUS-AICS/xhis-automation
 ## Env set up
 * Windows common
-    * Azure cli: Check permission to access (az login / az logout)
+    * Azure cli: Check permission to access (**az login** / **az logout**)
     * Runtime: **python3.8.10+**
     * Chromedriver: Please find your chrome version in your environment and
     download the correspond chromedriver version.
     Finally, put it to the corresponding path. (default: under repo dir)
-        * How to find your chrome version: chrome://settings/help
+        * How to find your chrome version: **chrome://settings/help**
         * Download chromedriver: https://chromedriver.chromium.org/downloads
     * Packages: Install requirements
         ```
