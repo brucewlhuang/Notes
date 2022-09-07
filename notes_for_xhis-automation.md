@@ -6,7 +6,7 @@
     * Runtime: **python3.8.10+**
     * Chromedriver: Please find your chrome version in your environment and
     download the correspond chromedriver version.
-    Finally, put it to the corresponding path. (default: under repo dir)
+    Finally, put it to the corresponding path. (default: under this repo dir, you can find this setting in **automation_test/his_agent/config/his_agent.json** [**chrome_driver_executable_path**])
         * How to find your chrome version: **chrome://settings/help**
         * Download chromedriver: https://chromedriver.chromium.org/downloads
     * Packages: Install requirements
@@ -56,16 +56,16 @@
     ```
     python -m script_assistant.run
     ```
-* **runner_config.json** path: **automation_test/runner/config/** (setting like pytest)
-    * step_sleep_time
-    * include_test_target: you can change your test target. e.q.
+* **runner_config.json**: path: **automation_test/runner/config/** (setting like pytest)
+    * **step_sleep_time**
+    * **include_test_target**: you can change your test target. e.q.
     ```
     "automation_test/test_case/cc/azure_dev/soap_spell_check/e2e_show_spell_check.side"
     ```
-* **his_agent.json** path: **automation_test/his_agent/config/**
-    * headless: if it setting to false, the chromedriver will display the whole test prograss. 
-    * chrome_driver_executable_path
-        * common windows: **/chromedriver.exe**
+* **his_agent.json**: path: **automation_test/his_agent/config/**
+    * **headless**: if it setting to false, the chromedriver will display the whole test prograss.
+    * **chrome_driver_executable_path**
+        * common windows: **./chromedriver.exe**
         * wsl2: **/usr/bin/chromedriver**
 
 * run test:
