@@ -1,5 +1,7 @@
 ## Repo
 * https://github.com/ASUS-AICS/xhis-automation
+## Support Windows, Linux, Mac
+* https://github.com/ASUS-AICS/xhis-automation/tree/brucewl/mac-windows-autotest
 ## Env set up
 * Windows common
     * Azure cli: Check permission to access (**az login** / **az logout**)
@@ -48,7 +50,8 @@
         export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
         ```
     * ref : https://www.gregbrisebois.com/posts/chromedriver-in-wsl2/
-
+* Mac + zsh
+    * Like windows common metioned
 ## How to test
 * prepare files under the **spec** folder
 * refer to **config.json** under the **script_assistant** folder (setting like pytest)
@@ -67,6 +70,7 @@
     * **chrome_driver_executable_path**
         * common windows: **./chromedriver.exe**
         * wsl2: **/usr/bin/chromedriver**
+        * mac: **./chromedriver**
 
 * run test:
     ```
